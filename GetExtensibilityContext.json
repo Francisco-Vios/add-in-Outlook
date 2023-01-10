@@ -1,0 +1,1413 @@
+{
+    "Extensions": [
+        {
+            "Id": "dfdd5eca-4c0a-445d-a652-63906c3f5c9a",
+            "Version": "1.0.0.0",
+            "DisplayName": "Vios Jurídico",
+            "Description": "Extensão para facilitar seu dia a dia.",
+            "ConsentState": 2,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": null,
+            "MarketplaceAssetID": null,
+            "ProviderName": "Vios Tecnologia",
+            "IconUrl": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-64.png",
+            "HighResolutionIconUrl": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-64.png",
+            "Origin": 1,
+            "OriginString": "User",
+            "Type": 1,
+            "TypeString": "Private",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com"
+            ],
+            "EndNodeUrl": null,
+            "LicenseType": 0,
+            "AuthTokenId": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/commands.html",
+            "Rule": {
+                "__type": "CollectionRule:#Exchange",
+                "Mode": "And",
+                "Rules": [
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 3,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    }
+                ],
+                "Type": "Collection"
+            },
+            "Settings": "{}",
+            "RequestedCapabilities": 2,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/commands.html",
+                "SupportsSharedFolders": null,
+                "MessageReadCommandSurface": null,
+                "MessageComposeCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabDefault",
+                            "Groups": [
+                                {
+                                    "Id": "msgComposeGroup",
+                                    "Label": "Vios Tecnologia Add-in",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/taskpane.html",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Vincular E-mail",
+                                            "Supertip": {
+                                                "Title": "Vincular E-mail",
+                                                "Description": "Abre painel para anexar a mensagem no Vios Jurídico"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-16.png",
+                                                "Size32Url": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-32.png",
+                                                "Size80Url": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/assets/icon-vios-64.png"
+                                            },
+                                            "Id": "Vios.msgComposeOpenPaneButton"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentOrganizerCommandSurface": null,
+                "AppointmentAttendeeCommandSurface": null,
+                "CustomPane": null,
+                "DetectedEntity": null,
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": {
+                    "SourceLocation": "https://vios-outlook-extensao.s3.sa-east-1.amazonaws.com/commands.html",
+                    "LaunchEvents": [
+                        {
+                            "Type": 5,
+                            "FunctionName": "onMessageSendHandler",
+                            "SendMode": 2
+                        }
+                    ]
+                },
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "IsAddInActivated": null,
+            "ExtendedPermissions": null
+        },
+        {
+            "Id": "49d3b812-abda-45b9-b478-9bc464ce5b9c",
+            "Version": "2.0.0.2",
+            "DisplayName": "Script Lab for Outlook",
+            "Description": null,
+            "ConsentState": 2,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": "pt-BR",
+            "MarketplaceAssetID": "WA200001603",
+            "ProviderName": "Microsoft",
+            "IconUrl": "https://script-lab-react.azurewebsites.net/assets/images/icon-64.png",
+            "HighResolutionIconUrl": "https://script-lab-react.azurewebsites.net/assets/images/icon-64.png",
+            "Origin": 1,
+            "OriginString": "User",
+            "Type": 2,
+            "TypeString": "MarketPlace",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://github.com",
+                "https://stackoverflow.com",
+                "https://localhost:3000",
+                "https://localhost:3200",
+                "https://script-lab.azureedge.net",
+                "https://script-lab-runner.azureedge.net",
+                "https://bornholm-edge.azurewebsites.net",
+                "https://bornholm-runner-edge.azurewebsites.net",
+                "https://bornholm-insiders.azurewebsites.net",
+                "https://bornholm-runner-insiders.azurewebsites.net",
+                "https://bornholm-staging.azurewebsites.net",
+                "https://bornholm-runner-staging.azurewebsites.net",
+                "https://bornholm.azurewebsites.net",
+                "https://bornholm-runner.azurewebsites.net",
+                "https://script-lab-react.azurewebsites.net",
+                "https://script-lab-react-runner.azurewebsites.net",
+                "https://script-lab-react-server.azurewebsites.net",
+                "https://script-lab-react-alpha.azurewebsites.net",
+                "https://script-lab-react-runner-alpha.azurewebsites.net",
+                "https://script-lab-react-server-alpha.azurewebsites.net",
+                "https://script-lab-react-beta.azurewebsites.net",
+                "https://script-lab-react-runner-beta.azurewebsites.net",
+                "https://script-lab-react-server-beta.azurewebsites.net",
+                "https://script-lab-react-staging.azurewebsites.net",
+                "https://script-lab-react-runner-staging.azurewebsites.net",
+                "https://script-lab-react-server-staging.azurewebsites.net"
+            ],
+            "EndNodeUrl": "https://o15.officeredir.microsoft.com/r/rlidMktplcExchRedirect?app=outlook.exe&ver=15&clid=1046&p1=15d20d5986d18&p2=4&p3=0&p4=WA&p5=pt-BR\\WA200001603&Scope=3&CallBackURL=https%3a%2f%2foutlook.live.com%2fowa%2f%3fpath%3d%252foptions%252fmanageapps%252faction%252finstallFromURL.slab%2526deployId%3dsct-15-20-4755-11-msonline-outlook-f04de.templateTenant&DeployId=sct-15-20-4755-11-msonline-outlook-f04de.templateTenant",
+            "LicenseType": 0,
+            "AuthTokenId": "https://script-lab-react.azurewebsites.net",
+            "Rule": {
+                "__type": "CollectionRule:#Exchange",
+                "Mode": "Or",
+                "Rules": [
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 3,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 2,
+                        "FormType": 3,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    }
+                ],
+                "Type": "Collection"
+            },
+            "Settings": "{}",
+            "RequestedCapabilities": 2,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": "https://script-lab.azureedge.net/functions.html",
+                "SupportsSharedFolders": true,
+                "MessageReadCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabPlaygroundRead",
+                            "Groups": [
+                                {
+                                    "Id": "PG.PlayGroup.Read",
+                                    "Label": "Script Lab",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchCode"
+                                            },
+                                            "Label": "Code",
+                                            "Supertip": {
+                                                "Title": "Create or edit code snippets",
+                                                "Description": "Opens the Script Lab code editor"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/code-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/code-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/code-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.CodeCommand.Read"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://script-lab.azureedge.net/run.html",
+                                                "SupportsPersistence": true,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Run",
+                                            "Supertip": {
+                                                "Title": "Run the code snippet",
+                                                "Description": "Opens a task pane that runs the current snippet"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/run-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/run-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/run-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.RunCommand.Read"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchTutorial"
+                                            },
+                                            "Label": "Tutorial",
+                                            "Supertip": {
+                                                "Title": "Script Lab tutorial",
+                                                "Description": "Launches a quick Script Lab tutorial"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/tutorial-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/tutorial-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/tutorial-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.TutorialCommand.Read"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchHelp"
+                                            },
+                                            "Label": "Help",
+                                            "Supertip": {
+                                                "Title": "Help for Script Lab",
+                                                "Description": "Launches documentation on using Script Lab"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/help-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/help-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/help-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.HelpCommand.Read"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchApiDocs"
+                                            },
+                                            "Label": "Reference Docs",
+                                            "Supertip": {
+                                                "Title": "API Reference Documentation",
+                                                "Description": "Opens the API documentation for the Office application that you are running"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/docs-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/docs-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/docs-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.ApiDocsCommand.Read"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchAsk"
+                                            },
+                                            "Label": "Ask the Community",
+                                            "Supertip": {
+                                                "Title": "Get API help from the community",
+                                                "Description": "Launches a community forum for questions about the Office JavaScript APIs"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/ask-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/ask-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/ask-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.AskCommand.Read"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "MessageComposeCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabPlaygroundCompose",
+                            "Groups": [
+                                {
+                                    "Id": "PG.PlayGroup.Compose",
+                                    "Label": "Script Lab",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchCode"
+                                            },
+                                            "Label": "Code",
+                                            "Supertip": {
+                                                "Title": "Create or edit code snippets",
+                                                "Description": "Opens the Script Lab code editor"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/code-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/code-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/code-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.CodeCommand.Compose"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://script-lab.azureedge.net/run.html",
+                                                "SupportsPersistence": true,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Run",
+                                            "Supertip": {
+                                                "Title": "Run the code snippet",
+                                                "Description": "Opens a task pane that runs the current snippet"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/run-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/run-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/run-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.RunCommand.Compose"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchTutorial"
+                                            },
+                                            "Label": "Tutorial",
+                                            "Supertip": {
+                                                "Title": "Script Lab tutorial",
+                                                "Description": "Launches a quick Script Lab tutorial"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/tutorial-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/tutorial-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/tutorial-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.TutorialCommand.Compose"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchHelp"
+                                            },
+                                            "Label": "Help",
+                                            "Supertip": {
+                                                "Title": "Help for Script Lab",
+                                                "Description": "Launches documentation on using Script Lab"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/help-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/help-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/help-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.HelpCommand.Compose"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchApiDocs"
+                                            },
+                                            "Label": "Reference Docs",
+                                            "Supertip": {
+                                                "Title": "API Reference Documentation",
+                                                "Description": "Opens the API documentation for the Office application that you are running"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/docs-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/docs-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/docs-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.ApiDocsCommand.Compose"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchAsk"
+                                            },
+                                            "Label": "Ask the Community",
+                                            "Supertip": {
+                                                "Title": "Get API help from the community",
+                                                "Description": "Launches a community forum for questions about the Office JavaScript APIs"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/ask-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/ask-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/ask-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.AskCommand.Compose"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentOrganizerCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabPlaygroundAppointmentOrganizer",
+                            "Groups": [
+                                {
+                                    "Id": "PG.PlayGroup.AppointmentOrganizer",
+                                    "Label": "Script Lab",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchCode"
+                                            },
+                                            "Label": "Code",
+                                            "Supertip": {
+                                                "Title": "Create or edit code snippets",
+                                                "Description": "Opens the Script Lab code editor"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/code-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/code-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/code-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.CodeCommand.AppointmentOrganizer"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://script-lab.azureedge.net/run.html",
+                                                "SupportsPersistence": true,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Run",
+                                            "Supertip": {
+                                                "Title": "Run the code snippet",
+                                                "Description": "Opens a task pane that runs the current snippet"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/run-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/run-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/run-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.RunCommand.AppointmentOrganizer"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchTutorial"
+                                            },
+                                            "Label": "Tutorial",
+                                            "Supertip": {
+                                                "Title": "Script Lab tutorial",
+                                                "Description": "Launches a quick Script Lab tutorial"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/tutorial-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/tutorial-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/tutorial-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.TutorialCommand.AppointmentOrganizer"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchHelp"
+                                            },
+                                            "Label": "Help",
+                                            "Supertip": {
+                                                "Title": "Help for Script Lab",
+                                                "Description": "Launches documentation on using Script Lab"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/help-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/help-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/help-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.HelpCommand.AppointmentOrganizer"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchApiDocs"
+                                            },
+                                            "Label": "Reference Docs",
+                                            "Supertip": {
+                                                "Title": "API Reference Documentation",
+                                                "Description": "Opens the API documentation for the Office application that you are running"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/docs-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/docs-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/docs-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.ApiDocsCommand.AppointmentOrganizer"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchAsk"
+                                            },
+                                            "Label": "Ask the Community",
+                                            "Supertip": {
+                                                "Title": "Get API help from the community",
+                                                "Description": "Launches a community forum for questions about the Office JavaScript APIs"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/ask-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/ask-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/ask-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.AskCommand.AppointmentOrganizer"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentAttendeeCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabPlaygroundAppointmentAttendee",
+                            "Groups": [
+                                {
+                                    "Id": "PG.PlayGroup.AppointmentAttendee",
+                                    "Label": "Script Lab",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchCode"
+                                            },
+                                            "Label": "Code",
+                                            "Supertip": {
+                                                "Title": "Create or edit code snippets",
+                                                "Description": "Opens the Script Lab code editor"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/code-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/code-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/code-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.CodeCommand.AppointmentAttendee"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://script-lab.azureedge.net/run.html",
+                                                "SupportsPersistence": true,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Run",
+                                            "Supertip": {
+                                                "Title": "Run the code snippet",
+                                                "Description": "Opens a task pane that runs the current snippet"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/run-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/run-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/run-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.RunCommand.AppointmentAttendee"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchTutorial"
+                                            },
+                                            "Label": "Tutorial",
+                                            "Supertip": {
+                                                "Title": "Script Lab tutorial",
+                                                "Description": "Launches a quick Script Lab tutorial"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/tutorial-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/tutorial-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/tutorial-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.TutorialCommand.AppointmentAttendee"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchHelp"
+                                            },
+                                            "Label": "Help",
+                                            "Supertip": {
+                                                "Title": "Help for Script Lab",
+                                                "Description": "Launches documentation on using Script Lab"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/help-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/help-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/help-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.HelpCommand.AppointmentAttendee"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchApiDocs"
+                                            },
+                                            "Label": "Reference Docs",
+                                            "Supertip": {
+                                                "Title": "API Reference Documentation",
+                                                "Description": "Opens the API documentation for the Office application that you are running"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/docs-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/docs-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/docs-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.ApiDocsCommand.AppointmentAttendee"
+                                        },
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ExecuteFunction:#Exchange",
+                                                "FunctionName": "launchAsk"
+                                            },
+                                            "Label": "Ask the Community",
+                                            "Supertip": {
+                                                "Title": "Get API help from the community",
+                                                "Description": "Launches a community forum for questions about the Office JavaScript APIs"
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://script-lab.azureedge.net/assets/images/ask-16.png",
+                                                "Size32Url": "https://script-lab.azureedge.net/assets/images/ask-32.png",
+                                                "Size80Url": "https://script-lab.azureedge.net/assets/images/ask-80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "PG.AskCommand.AppointmentAttendee"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "CustomPane": null,
+                "DetectedEntity": null,
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": null,
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "IsAddInActivated": null,
+            "ExtendedPermissions": [
+                "AppendOnSend"
+            ]
+        },
+        {
+            "Id": "6b47614e-0125-454b-9f76-bd5aef85ac7b",
+            "Version": "1.0.0.13",
+            "DisplayName": "Enviar para o OneNote",
+            "Description": "Salve seus emails ou detalhes da reunião no OneNote.",
+            "ConsentState": 2,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": null,
+            "MarketplaceAssetID": null,
+            "ProviderName": "Microsoft Corporation",
+            "IconUrl": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenote-icon64x64.png",
+            "HighResolutionIconUrl": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenote-icon64x64.png",
+            "Origin": 1,
+            "OriginString": "User",
+            "Type": 1,
+            "TypeString": "Private",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://www.onenote.com"
+            ],
+            "EndNodeUrl": null,
+            "LicenseType": 0,
+            "AuthTokenId": "https://www.onenote.com/officeaddins/sendToOneNote/react?mode=read",
+            "Rule": {
+                "__type": "CollectionRule:#Exchange",
+                "Mode": "Or",
+                "Rules": [
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 1,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 2,
+                        "FormType": 1,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 2,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 2,
+                        "FormType": 2,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    }
+                ],
+                "Type": "Collection"
+            },
+            "Settings": "{}",
+            "RequestedCapabilities": 2,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": "https://www.onenote.com/officeaddins/sendToOneNote/functions?mode=unknown",
+                "SupportsSharedFolders": null,
+                "MessageReadCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "TabDefault",
+                            "Groups": [
+                                {
+                                    "Id": "msgReadCmdGroup",
+                                    "Label": "OneNote",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://www.onenote.com/officeaddins/sendToOneNote/react?mode=read",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Enviar para o OneNote",
+                                            "Supertip": {
+                                                "Title": "Enviar para o OneNote",
+                                                "Description": "Salve seus emails ou detalhes da reunião no OneNote."
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo16x16.png",
+                                                "Size32Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo32x32.png",
+                                                "Size80Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo80x80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "showOneNoteButtonMsgRead"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "MessageComposeCommandSurface": null,
+                "AppointmentOrganizerCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "ApptOrganizerTab",
+                            "Groups": [
+                                {
+                                    "Id": "apptOrganizerCmdGroup",
+                                    "Label": "OneNote",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://www.onenote.com/officeaddins/sendToOneNote/react?mode=write",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Anotações da Reunião",
+                                            "Supertip": {
+                                                "Title": "Anotações da Reunião",
+                                                "Description": "Salve seus emails ou detalhes da reunião no OneNote."
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo16x16.png",
+                                                "Size32Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo32x32.png",
+                                                "Size80Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo80x80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "showOneNoteButtonApptOrganizer"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentAttendeeCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "ApptAttendeeTab",
+                            "Groups": [
+                                {
+                                    "Id": "apptAttendeeeCmdGroup",
+                                    "Label": "OneNote",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://www.onenote.com/officeaddins/sendToOneNote/react?mode=read",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Enviar para o OneNote",
+                                            "Supertip": {
+                                                "Title": "Enviar para o OneNote",
+                                                "Description": "Salve seus emails ou detalhes da reunião no OneNote."
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo16x16.png",
+                                                "Size32Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo32x32.png",
+                                                "Size80Url": "https://npwuscdn-webcontent.azureedge.net/onenoteserviceoutlookintegration/assets/images/onenotev2-logo80x80.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "showOneNoteButtonApptAttendee"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "CustomPane": null,
+                "DetectedEntity": null,
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": null,
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "WebApplicationResource": "https://www.onenote.com/",
+            "WebAppId": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
+            "WebAppScopes": [
+                "OneNote.ReadWrite"
+            ],
+            "IsAddInActivated": null,
+            "ExtendedPermissions": null
+        },
+        {
+            "Id": "7a774f0c-7a6f-11e0-85ad-07fb4824019b",
+            "Version": "1.1",
+            "DisplayName": "Bing Maps",
+            "Description": "Mapeie endereços encontrados em seu email. Este suplemento enviará endereços ao Bing, mas não compartilhará seus dados com nenhum serviço de terceiros.",
+            "ConsentState": 0,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": null,
+            "MarketplaceAssetID": null,
+            "ProviderName": "Microsoft",
+            "IconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/7a774f0c-7a6f-11e0-85ad-07fb4824019b/images/icon.png",
+            "HighResolutionIconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/7a774f0c-7a6f-11e0-85ad-07fb4824019b/images/icon.png",
+            "Origin": 3,
+            "OriginString": "Default",
+            "Type": 0,
+            "TypeString": "Default",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://r4.res.office365.com"
+            ],
+            "EndNodeUrl": null,
+            "LicenseType": 0,
+            "AuthTokenId": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/7a774f0c-7a6f-11e0-85ad-07fb4824019b/suggestedaddresses.html",
+            "Rule": {
+                "__type": "ItemHasKnownEntityRule:#Exchange",
+                "EntityType": 3,
+                "FilterName": null,
+                "RegExFilter": null,
+                "IgnoreCase": false,
+                "Highlight": 3,
+                "Type": "ItemHasKnownEntity"
+            },
+            "Settings": "{}",
+            "RequestedCapabilities": 0,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": null,
+                "SupportsSharedFolders": null,
+                "MessageReadCommandSurface": null,
+                "MessageComposeCommandSurface": null,
+                "AppointmentOrganizerCommandSurface": null,
+                "AppointmentAttendeeCommandSurface": null,
+                "CustomPane": null,
+                "DetectedEntity": {
+                    "__type": "DetectedEntity:#Exchange",
+                    "RequestedHeight": 300,
+                    "Label": "Bing Maps",
+                    "SourceLocation": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/7a774f0c-7a6f-11e0-85ad-07fb4824019b/suggestedaddresses.html",
+                    "Rule": {
+                        "__type": "ItemHasKnownEntityRule:#Exchange",
+                        "EntityType": 3,
+                        "FilterName": null,
+                        "RegExFilter": null,
+                        "IgnoreCase": false,
+                        "Highlight": 0,
+                        "Type": "ItemHasKnownEntity"
+                    }
+                },
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": null,
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "IsAddInActivated": null,
+            "ExtendedPermissions": null
+        },
+        {
+            "Id": "a216ceed-7791-4635-a752-5a4ac0a5eb93",
+            "Version": "1.0",
+            "DisplayName": "Meus modelos",
+            "Description": null,
+            "ConsentState": 0,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": null,
+            "MarketplaceAssetID": null,
+            "ProviderName": "Microsoft",
+            "IconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+            "HighResolutionIconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+            "Origin": 3,
+            "OriginString": "Default",
+            "Type": 0,
+            "TypeString": "Default",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://r4.res.office365.com"
+            ],
+            "EndNodeUrl": null,
+            "LicenseType": 0,
+            "AuthTokenId": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/page.html",
+            "Rule": {
+                "__type": "CollectionRule:#Exchange",
+                "Mode": "Or",
+                "Rules": [
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 1,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 2,
+                        "FormType": 1,
+                        "ItemClass": null,
+                        "Type": "ItemIs"
+                    }
+                ],
+                "Type": "Collection"
+            },
+            "Settings": "{\"_localizationSettings\":\"{\\\"pt-br\\\":\\\"pt\\\"}\",\"userAppVersion\":\"\\\"1.0\\\"\"}",
+            "RequestedCapabilities": 3,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": null,
+                "SupportsSharedFolders": null,
+                "MessageReadCommandSurface": null,
+                "MessageComposeCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "msgComposeTab",
+                            "Groups": [
+                                {
+                                    "Id": "msgComposeGroup",
+                                    "Label": "Meus modelos",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/page.html",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Ver Modelos",
+                                            "Supertip": {
+                                                "Title": "Ver e Gerir Modelos",
+                                                "Description": "Abrir um painel que apresenta todos os modelos guardados no seu perfil e os modelos fornecidos pelo Outlook. Pode adicionar, remover ou alterar as definições dos seus modelos."
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size32Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size80Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "msgComposeOpenPaneButton"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentOrganizerCommandSurface": {
+                    "Tabs": [
+                        {
+                            "Type": 0,
+                            "Id": "apptOrganizerTab",
+                            "Groups": [
+                                {
+                                    "Id": "apptOrganizerGroup",
+                                    "Label": "Meus modelos",
+                                    "Controls": [
+                                        {
+                                            "__type": "Button:#Exchange",
+                                            "Action": {
+                                                "__type": "ShowTaskPane:#Exchange",
+                                                "SourceLocation": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/page.html",
+                                                "SupportsPersistence": false,
+                                                "SupportsMultiSelect": false
+                                            },
+                                            "Label": "Ver Modelos",
+                                            "Supertip": {
+                                                "Title": "Ver e Gerir Modelos",
+                                                "Description": "Abrir um painel que apresenta todos os modelos guardados no seu perfil e os modelos fornecidos pelo Outlook. Pode adicionar, remover ou alterar as definições dos seus modelos."
+                                            },
+                                            "Icon": {
+                                                "Size16Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size32Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size80Url": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/a216ceed-7791-4635-a752-5a4ac0a5eb93/images/app_icon.png",
+                                                "Size20Url": null,
+                                                "Size24Url": null,
+                                                "Size40Url": null,
+                                                "Size48Url": null,
+                                                "Size64Url": null
+                                            },
+                                            "Id": "apptOrganizerOpenPaneButton"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Label": null
+                        }
+                    ],
+                    "Control": null
+                },
+                "AppointmentAttendeeCommandSurface": null,
+                "CustomPane": null,
+                "DetectedEntity": null,
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": null,
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "IsAddInActivated": null,
+            "ExtendedPermissions": null
+        },
+        {
+            "Id": "bc13b9d0-5ba2-446a-956b-c583bdc94d5e",
+            "Version": "1.1",
+            "DisplayName": "Eventos sugeridos",
+            "Description": "Mostra sugestões de eventos encontrados em seu email e permite que você as adicione ao calendário. Este suplemento não compartilhará seus dados com nenhum serviço de terceiros.",
+            "ConsentState": 0,
+            "ConsentMetadata": null,
+            "MarketplaceContentMarket": null,
+            "MarketplaceAssetID": null,
+            "ProviderName": "Microsoft",
+            "IconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/bc13b9d0-5ba2-446a-956b-c583bdc94d5e/images/icon.png",
+            "HighResolutionIconUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/bc13b9d0-5ba2-446a-956b-c583bdc94d5e/images/icon.png",
+            "Origin": 3,
+            "OriginString": "Default",
+            "Type": 0,
+            "TypeString": "Default",
+            "AppStatus": "",
+            "AppDomains": [
+                "https://r4.res.office365.com"
+            ],
+            "EndNodeUrl": null,
+            "LicenseType": 0,
+            "AuthTokenId": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/bc13b9d0-5ba2-446a-956b-c583bdc94d5e/suggestedmeetings.html",
+            "Rule": {
+                "__type": "CollectionRule:#Exchange",
+                "Mode": "And",
+                "Rules": [
+                    {
+                        "__type": "ItemHasKnownEntityRule:#Exchange",
+                        "EntityType": 1,
+                        "FilterName": null,
+                        "RegExFilter": null,
+                        "IgnoreCase": false,
+                        "Highlight": 3,
+                        "Type": "ItemHasKnownEntity"
+                    },
+                    {
+                        "__type": "ItemIsRule:#Exchange",
+                        "ItemType": 1,
+                        "FormType": 2,
+                        "ItemClass": "ipm.note",
+                        "IncludeSubClasses": true,
+                        "Type": "ItemIs"
+                    }
+                ],
+                "Type": "Collection"
+            },
+            "Settings": "{}",
+            "RequestedCapabilities": 2,
+            "DisableEntityHighlighting": false,
+            "AutoLaunchPriority": -1,
+            "FormSettingsList": null,
+            "Enabled": true,
+            "LicenseStatus": 0,
+            "TrialExpirationDate": null,
+            "ExtensionPointCollection": {
+                "FunctionFile": null,
+                "SupportsSharedFolders": null,
+                "MessageReadCommandSurface": null,
+                "MessageComposeCommandSurface": null,
+                "AppointmentOrganizerCommandSurface": null,
+                "AppointmentAttendeeCommandSurface": null,
+                "CustomPane": null,
+                "DetectedEntity": {
+                    "__type": "DetectedEntity:#Exchange",
+                    "RequestedHeight": 360,
+                    "Label": "Eventos sugeridos",
+                    "SourceLocation": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/bc13b9d0-5ba2-446a-956b-c583bdc94d5e/suggestedmeetings.html",
+                    "Rule": {
+                        "__type": "CollectionRule:#Exchange",
+                        "Mode": "And",
+                        "Rules": [
+                            {
+                                "__type": "ItemHasKnownEntityRule:#Exchange",
+                                "EntityType": 1,
+                                "FilterName": null,
+                                "RegExFilter": null,
+                                "IgnoreCase": false,
+                                "Highlight": 0,
+                                "Type": "ItemHasKnownEntity"
+                            },
+                            {
+                                "__type": "ItemIsRule:#Exchange",
+                                "ItemType": 1,
+                                "FormType": 2,
+                                "ItemClass": "ipm.note",
+                                "IncludeSubClasses": true,
+                                "Type": "ItemIs"
+                            }
+                        ],
+                        "Type": "Collection"
+                    }
+                },
+                "Module": null,
+                "Events": null,
+                "AddInRunMessageCompose": null,
+                "AddInRunAppointmentOrganizer": null,
+                "LaunchEvent": null,
+                "OnlineMeetingCommandSurface": null
+            },
+            "IsMandatory": false,
+            "IsAddInActivated": null,
+            "ExtendedPermissions": null
+        }
+    ],
+    "MarketplaceUrl": "https://o15.officeredir.microsoft.com/r/rlidMktplcExchRedirect?app=outlook.exe&ver=15&clid=1046&p1=15d20d5389d000&p2=4&p3=consumer&p4=HP&p5=0&Scope=3&CallBackURL=https%3a%2f%2foutlook.live.com%2fowa%2f%3fpath%3d%252foptions%252fmanageapps%252faction%252finstallFromURL.slab%2526deployId%3dsct-15-20-4755-11-msonline-outlook-f04de.templateTenant&DeployId=sct-15-20-4755-11-msonline-outlook-f04de.templateTenant",
+    "EwsUrl": "https://outlook.office365.com/EWS/Exchange.asmx",
+    "RestUrl": "https://outlook.office365.com/api",
+    "ConsentUrl": "https://r4.res.office365.com/owa/prem/ext/def/gamma/3.0/54a84acc-6fd9-4a5f-a5f7-883947d4120f/default.html",
+    "IsInOrgMarketplaceRole": true,
+    "InClientStoreUrl": "https://inclient.store.office.com/gyro/client",
+    "CustomExtensionsEnabled": true,
+    "ConnectorsEnabled": true,
+    "ConnectorsManagementUrl": "https://outlook.office.com/connectors/?MailboxType=User&Category=Mail&Culture=pt-BR",
+    "UserInstallableAppTypes": [
+        1,
+        2,
+        3
+    ],
+    "GenericInfo": "{\"IsMinor\":false,\"extensionUsageDictionary\":null}"
+}
